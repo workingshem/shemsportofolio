@@ -44,7 +44,6 @@ import { fileURLToPath } from "url";
 var __filename = fileURLToPath(import.meta.url);
 var __dirname = path2.dirname(__filename);
 var vite_config_default = defineConfig({
-  base: "/shemsportofolio/",
   plugins: [
     react(),
     runtimeErrorOverlay(),
@@ -55,6 +54,7 @@ var vite_config_default = defineConfig({
       )
     ] : []
   ],
+  base: "/shemsportofolio/",
   resolve: {
     alias: {
       "@": path2.resolve(__dirname, "client", "src"),
