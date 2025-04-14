@@ -12,7 +12,7 @@
     "build_start": "npm run build && npm run start",
     "check": "tsc",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.1",
