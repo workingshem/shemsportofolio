@@ -19,16 +19,16 @@ export default function SkillsSection() {
               
               <SkillBar 
                 name="SQL & BigQuery" 
+                percentage={95} 
+              />
+              
+              <SkillBar 
+                name="Flask" 
                 percentage={90} 
               />
               
               <SkillBar 
-                name="Flask & Dash" 
-                percentage={85} 
-              />
-              
-              <SkillBar 
-                name="AWS" 
+                name="AWS & Google Cloud" 
                 percentage={80} 
               />
             </div>
@@ -37,28 +37,28 @@ export default function SkillsSection() {
             
             <div className="space-y-5">
               <SkillBar 
-                name="Tableau" 
+                name="Kepler (Geospatial Intelligence)" 
+                percentage={90} 
+                color="bg-emerald-500"
+              />
+
+              <SkillBar 
+                name="Matplotlib, Seaborn and Plotly" 
                 percentage={90} 
                 color="bg-emerald-500"
               />
               
               <SkillBar 
-                name="Power BI" 
-                percentage={85} 
-                color="bg-emerald-500"
-              />
-              
-              <SkillBar 
                 name="Google Looker" 
+                percentage={90} 
+                color="bg-emerald-500"
+              />
+              <SkillBar 
+                name="ESRI StoryMaps" 
                 percentage={85} 
                 color="bg-emerald-500"
               />
               
-              <SkillBar 
-                name="Matplotlib & Dash" 
-                percentage={95} 
-                color="bg-emerald-500"
-              />
             </div>
           </div>
           
@@ -67,26 +67,26 @@ export default function SkillsSection() {
             
             <div className="space-y-5">
               <SkillBar 
-                name="Predictive Modeling" 
-                percentage={90} 
+                name="Statistics & Predictive Modeling" 
+                percentage={85} 
                 color="bg-amber-500"
               />
               
               <SkillBar 
                 name="Deep Learning" 
-                percentage={85} 
-                color="bg-amber-500"
-              />
-              
-              <SkillBar 
-                name="NLP" 
                 percentage={80} 
                 color="bg-amber-500"
               />
               
               <SkillBar 
+                name="LLM - Generative AI - GPT" 
+                percentage={70} 
+                color="bg-amber-500"
+              />
+              
+              <SkillBar 
                 name="Causal Inference" 
-                percentage={85} 
+                percentage={60} 
                 color="bg-amber-500"
               />
             </div>
@@ -101,20 +101,20 @@ export default function SkillsSection() {
               />
               
               <SkillBar 
-                name="GeoSpatial Intelligence" 
+                name="AWS Geospatial Function with Athena" 
                 percentage={90} 
                 color="bg-indigo-500"
               />
               
               <SkillBar 
-                name="Multi-Layered Data Analysis" 
+                name="Geospatial Visualization and Insight" 
                 percentage={85} 
                 color="bg-indigo-500"
               />
               
               <SkillBar 
                 name="Spatial Pattern Recognition" 
-                percentage={90} 
+                percentage={90}
                 color="bg-indigo-500"
               />
             </div>
