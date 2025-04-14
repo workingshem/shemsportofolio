@@ -8,6 +8,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 export default defineConfig({
+  base:"/shemsportofolio/",
   plugins: [
     react(),
     runtimeErrorOverlay(),
@@ -21,7 +22,7 @@ export default defineConfig({
         ]
       : []),
   ],
-  base:"/shemsportofolio",
+  
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "client", "src"),
