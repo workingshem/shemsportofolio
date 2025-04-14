@@ -1,5 +1,6 @@
 {
   "name": "rest-express",
+  "homepage": "https://workingshem.github.io/shemsportofolio",
   "version": "1.0.0",
   "type": "module",
   "license": "MIT",
@@ -7,7 +8,7 @@
     "dev": "NODE_ENV=development tsx server/index.ts",
     "build": "vite build && esbuild server/index.ts --platform=node --packages=external --bundle --format=esm --outdir=dist",
     "start": "NODE_ENV=production node dist/index.js",
-    "build_start":"npm run build && npm run start",
+    "build_start": "npm run build && npm run start",
     "check": "tsc",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
@@ -56,6 +57,7 @@
     "express": "^4.21.2",
     "express-session": "^1.18.1",
     "framer-motion": "^11.13.1",
+    "gh-pages": "^6.3.0",
     "input-otp": "^1.2.4",
     "lucide-react": "^0.453.0",
     "memorystore": "^1.6.7",
