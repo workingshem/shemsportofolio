@@ -21,6 +21,7 @@ export default defineConfig({
         ]
       : []),
   ],
+  // base:"/shemsportofolio",
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "client", "src"),
@@ -32,6 +33,5 @@ export default defineConfig({
   build: {
     outDir: path.resolve(__dirname, "dist/public"),
     emptyOutDir: true,
-  },
-  base:"/shemsportofolio"
+  }
 });
