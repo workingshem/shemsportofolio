@@ -5,7 +5,23 @@ import { MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
 
+/**
+ * VisualizationSection Component
+ * 
+ * This section showcases interactive data visualizations that highlight
+ * the portfolio owner's expertise in geospatial analysis and data science.
+ * 
+ * It includes:
+ * 1. An interactive demo of a geospatial heatmap visualization
+ * 2. A list of key visualization features
+ * 3. A breakdown of visualization technologies with skill proficiency levels
+ * 4. Interactive controls to toggle the visualization
+ * 
+ * The section serves to demonstrate both technical skill and the ability to
+ * create engaging visual representations of complex data.
+ */
 export default function VisualizationSection() {
+  // State to control whether the visualization is active
   const [visualizationActive, setVisualizationActive] = useState(false);
 
   return (
@@ -17,26 +33,32 @@ export default function VisualizationSection() {
         </p>
         
         <div className="grid md:grid-cols-2 gap-8 items-center">
+          {/* Left column: Visualization display and features */}
           <div>
+            {/* Visualization container */}
             <div className="rounded-lg shadow-md h-80 relative overflow-hidden border border-gray-200">
               <GeospatialMap active={visualizationActive} />
             </div>
             
+            {/* Visualization features list */}
             <div className="mt-6 p-5 bg-blue-50 rounded-lg">
               <h3 className="font-semibold text-lg mb-3">Visualization Features</h3>
               <ul className="space-y-2">
+                {/* Feature 1: Heatmap visualization */}
                 <li className="flex items-start">
                   <div className="flex-shrink-0 w-6 h-6 bg-primary rounded-full flex items-center justify-center mr-3 mt-0.5">
                     <span className="text-white text-xs font-bold">1</span>
                   </div>
                   <span>Dynamic heatmap visualization of pedestrian traffic</span>
                 </li>
+                {/* Feature 2: Time-series analysis */}
                 <li className="flex items-start">
                   <div className="flex-shrink-0 w-6 h-6 bg-primary rounded-full flex items-center justify-center mr-3 mt-0.5">
                     <span className="text-white text-xs font-bold">2</span>
                   </div>
                   <span>Time-series analysis of movement patterns</span>
                 </li>
+                {/* Feature 3: POI clustering */}
                 <li className="flex items-start">
                   <div className="flex-shrink-0 w-6 h-6 bg-primary rounded-full flex items-center justify-center mr-3 mt-0.5">
                     <span className="text-white text-xs font-bold">3</span>
@@ -47,11 +69,13 @@ export default function VisualizationSection() {
             </div>
           </div>
           
+          {/* Right column: Technologies and controls */}
           <div>
             <div className="bg-slate-50 p-6 rounded-lg shadow-sm">
               <h3 className="font-semibold text-xl mb-5">Visualization Technologies</h3>
               
               <div className="space-y-5">
+                {/* Technology 1: Looker & BigQuery */}
                 <SkillBar 
                   name="Looker & BigQuery" 
                   percentage={90} 
@@ -59,6 +83,7 @@ export default function VisualizationSection() {
                   description="Using Google's powerful tools to process and visualize large geospatial datasets."
                 />
                 
+                {/* Technology 2: Python Libraries */}
                 <SkillBar 
                   name="Interactive Python Libraries" 
                   percentage={95} 
@@ -66,6 +91,7 @@ export default function VisualizationSection() {
                   description="Leveraging Folium, Plotly, and custom visualization libraries for interactive maps."
                 />
                 
+                {/* Technology 3: Data Processing */}
                 <SkillBar 
                   name="Data Processing Pipelines" 
                   percentage={85} 
@@ -73,6 +99,7 @@ export default function VisualizationSection() {
                   description="Creating efficient pipelines to transform and prepare geospatial data for visualization."
                 />
                 
+                {/* Technology 4: Frontend Visualization */}
                 <SkillBar 
                   name="Frontend Visualization Tools" 
                   percentage={80} 
@@ -81,6 +108,7 @@ export default function VisualizationSection() {
                 />
               </div>
               
+              {/* Visualization control button */}
               <div className="mt-6">
                 <Button 
                   onClick={() => setVisualizationActive(!visualizationActive)} 
