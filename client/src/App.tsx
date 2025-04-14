@@ -9,8 +9,14 @@ import VisualizationSection from "@/components/visualization-section";
 import GameSection from "@/components/game-section";
 import ContactSection from "@/components/contact-section";
 import Footer from "@/components/footer";
+import ChatBubble from "@/components/chatbot/chat-bubble";
 import { MobileMenuProvider } from "./context/mobile-menu-context";
 
+/**
+ * Main App component that organizes the entire portfolio
+ * This is the root component that includes all sections of the portfolio
+ * and global elements like the navbar, footer, chatbot, and toaster notifications
+ */
 function App() {
   return (
     <div className="min-h-screen bg-background">
@@ -28,6 +34,7 @@ function App() {
         <ContactSection />
       </main>
       <Footer />
+      <ChatBubble />
       <Toaster />
     </div>
   );
