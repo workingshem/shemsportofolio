@@ -57,14 +57,14 @@ var vite_config_default = defineConfig({
   base: "/shemsportofolio/",
   resolve: {
     alias: {
-      "@": path2.resolve(__dirname, "client", "src"),
-      "@shared": path2.resolve(__dirname, "shared"),
-      "@assets": path2.resolve(__dirname, "attached_assets")
+      "@": path2.resolve(import.meta.dirname, "client", "src"),
+      "@shared": path2.resolve(import.meta.dirname, "shared"),
+      "@assets": path2.resolve(import.meta.dirname, "attached_assets")
     }
   },
-  root: path2.resolve(__dirname, "client"),
+  root: path2.resolve(import.meta.dirname, "client"),
   build: {
-    outDir: path2.resolve(__dirname, "dist/public"),
+    outDir: path2.resolve(import.meta.dirname, "dist/public"),
     emptyOutDir: true
   }
 });
@@ -108,7 +108,7 @@ async function setupVite(app2, server) {
     const url = req.originalUrl;
     try {
       const clientTemplate = path3.resolve(
-        __dirname2,
+        import.meta.dirname,
         "..",
         "client",
         "index.html"
@@ -128,7 +128,7 @@ async function setupVite(app2, server) {
   });
 }
 function serveStatic(app2) {
-  const distPath = path3.resolve(__dirname2, "public");
+  const distPath = path3.resolve(import.meta.dirname, "public");
   if (!fs.existsSync(distPath)) {
     throw new Error(
       `Could not find the build directory: ${distPath}, make sure to build the client first`
