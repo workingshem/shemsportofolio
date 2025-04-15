@@ -57,14 +57,14 @@ var vite_config_default = defineConfig({
   base: "/shemsportofolio/",
   resolve: {
     alias: {
-      "@": path2.resolve(__dirname, "client", "src"),
-      "@shared": path2.resolve(__dirname, "shared"),
-      "@assets": path2.resolve(__dirname, "attached_assets")
+      "@": path2.resolve(import.meta.dirname, "client", "src"),
+      "@shared": path2.resolve(import.meta.dirname, "shared"),
+      "@assets": path2.resolve(import.meta.dirname, "attached_assets")
     }
   },
-  root: path2.resolve(__dirname, "client"),
+  root: path2.resolve(import.meta.dirname, "client"),
   build: {
-    outDir: path2.resolve(__dirname, "dist/public"),
+    outDir: path2.resolve(import.meta.dirname, "dist/public"),
     emptyOutDir: true
   }
 });
