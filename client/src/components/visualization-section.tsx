@@ -69,7 +69,7 @@ export default function VisualizationSection() {
                   )}
                   <iframe
                     ref={iframeRef}
-                    src="/shemsporotfolio/IncidentTraffic.html"
+                    src="/shemsportofolio/IncidentTraffic.html"
                     width="100%"
                     height="100%"
                     className="relative z-0"
