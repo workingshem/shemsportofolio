@@ -1,6 +1,6 @@
 {
-  "name": "rest-express",
-  "private":true,
+  "name": "Shem Portofolio",
+  "private":false,
   "homepage": "https://workingshem.github.io/shemsportofolio/",
   "version": "1.0.0",
   "type": "module",
