@@ -37,7 +37,7 @@ export default function SkillsSection() {
             
             <div className="space-y-5">
               <SkillBar 
-                name="Kepler (Geospatial Intelligence)" 
+                name="Geospatial Analysis & Kepler (Geospatial Visualization)" 
                 percentage={90} 
                 color="bg-emerald-500"
               />
@@ -54,7 +54,7 @@ export default function SkillsSection() {
                 color="bg-emerald-500"
               />
               <SkillBar 
-                name="ESRI StoryMaps" 
+                name="Practical Spatial Insight and Implementation" 
                 percentage={85} 
                 color="bg-emerald-500"
               />
@@ -83,38 +83,38 @@ export default function SkillsSection() {
                 percentage={70} 
                 color="bg-amber-500"
               />
-              
+
               <SkillBar 
                 name="Causal Inference" 
-                percentage={60} 
+                percentage={65} 
                 color="bg-amber-500"
               />
+              
             </div>
             
-            <h3 className="font-semibold text-xl mt-10 mb-6">Geospatial Analysis</h3>
-            
+            <h3 className="font-semibold text-xl mt-10 mb-6">Soft Skills</h3>
             <div className="space-y-5">
               <SkillBar 
-                name="Google Looker & BigQuery GIS" 
-                percentage={95} 
-                color="bg-indigo-500"
-              />
-              
-              <SkillBar 
-                name="AWS Geospatial Function with Athena" 
-                percentage={90} 
-                color="bg-indigo-500"
-              />
-              
-              <SkillBar 
-                name="Geospatial Visualization and Insight" 
+                name="Communication Skills" 
                 percentage={85} 
                 color="bg-indigo-500"
               />
               
               <SkillBar 
-                name="Spatial Pattern Recognition" 
-                percentage={90}
+                name="Effective Work Under Pressure" 
+                percentage={85} 
+                color="bg-indigo-500"
+              />
+              
+              <SkillBar 
+                name="Team-Oriented Professional" 
+                percentage={80} 
+                color="bg-indigo-500"
+              />
+              
+              <SkillBar 
+                name="Technical Team Lead " 
+                percentage={75}
                 color="bg-indigo-500"
               />
             </div>

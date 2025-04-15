@@ -26,7 +26,7 @@ export default function Footer() {
               <Linkedin className="h-5 w-5" />
             </a>
             <a 
-              href="https://github.com/LimShem" 
+              href="https://github.com/workingshem" 
               target="_blank" 
               rel="noopener noreferrer"
               className="bg-white bg-opacity-10 hover:bg-opacity-20 text-white rounded-full w-10 h-10 flex items-center justify-center transition"
@@ -45,7 +45,12 @@ export default function Footer() {
         </div>
         
         <div className="mt-6 pt-6 border-t border-gray-700 text-center text-sm text-gray-400">
-          <p>© {new Date().getFullYear()} Shem Lim. All rights reserved.</p>
+          <p>
+            &copy; {new Date().getFullYear()} Shem Lim. All rights reserved.
+            <br />
+            This website is built with the help of{" "}
+            Replit AI.
+          </p>
         </div>
       </div>
     </footer>

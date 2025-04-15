@@ -21,7 +21,7 @@ export default defineConfig({
         ]
       : []),
   ],
-  base:"/shemsportofolio/",
+  // base:"/shemsportofolio/",
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "client", "src"),

@@ -30,7 +30,7 @@ function App() {
         <ProjectsSection />
         <ExperienceSection />
         <VisualizationSection />
-        <GameSection />
+        {/* <GameSection /> */}
         <ContactSection />
       </main>
       <Footer />

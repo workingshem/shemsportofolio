@@ -60,19 +60,19 @@ export default function ProjectsSection() {
                     </span>
                   ))}
                 </div>
-                <a href="#" className="text-primary font-medium hover:underline inline-flex items-center">
+                {/* <a href="#" className="text-primary font-medium hover:underline inline-flex items-center">
                   View Details <ArrowRight className="ml-1 h-4 w-4" />
-                </a>
+                </a> */}
               </CardContent>
             </Card>
           ))}
         </div>
         
-        <div className="mt-10 text-center">
+        {/* <div className="mt-10 text-center">
           <a href="#" className="inline-flex items-center text-primary hover:text-blue-700 font-medium">
             View All Projects <ArrowRight className="ml-2 h-5 w-5" />
           </a>
-        </div>
+        </div> */}
       </div>
     </section>
   );

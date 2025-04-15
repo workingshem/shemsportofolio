@@ -2,6 +2,7 @@ import { Link } from "wouter";
 import { useMobileMenu } from "@/context/mobile-menu-context";
 import { Menu, X } from "lucide-react";
 
+// { name: "Game", path: "#game" },
 const navLinks = [
   { name: "Home", path: "#home" },
   { name: "About", path: "#about" },
@@ -9,7 +10,6 @@ const navLinks = [
   { name: "Projects", path: "#projects" },
   { name: "Experience", path: "#experience" },
   { name: "Visualizations", path: "#visualizations" },
-  { name: "Game", path: "#game" },
   { name: "Contact", path: "#contact" },
 ];
 

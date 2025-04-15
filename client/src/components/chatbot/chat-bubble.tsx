@@ -138,7 +138,7 @@ export default function ChatBubble() {
         <div className="absolute bottom-16 right-0 w-80 sm:w-96 bg-white rounded-lg shadow-xl border border-gray-200 overflow-hidden">
           {/* Chat header */}
           <div className="bg-primary text-white p-3">
-            <h3 className="font-semibold">Chat with Shem</h3>
+            <h3 className="font-semibold">Chat with Shem (Beta)</h3>
             <p className="text-xs opacity-75">Data Scientist & Geospatial AI Expert</p>
           </div>
 
@@ -188,7 +188,7 @@ export default function ChatBubble() {
                     required
                   />
                 </div>
-                <Button type="submit" className="w-full">Start Chat</Button>
+                <Button type="submit" className="w-full" disabled>Start Chat</Button>
               </form>
             ) : (
               // Chat messages
