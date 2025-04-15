@@ -116,8 +116,8 @@ async function setupVite(app2, server) {
       let template = await fs.promises.readFile(clientTemplate, "utf-8");
       const basePath = vite.config.base || "/";
       template = template.replace(
-        `src="/client/src/main.tsx"`,
-        `src="${basePath}client/src/main.tsx?v=${nanoid()}"`
+        `src="/src/main.tsx"`,
+        `src="${basePath}src/main.tsx?v=${nanoid()}"`
       );
       const page = await vite.transformIndexHtml(url, template);
       res.status(200).set({ "Content-Type": "text/html" }).end(page);
