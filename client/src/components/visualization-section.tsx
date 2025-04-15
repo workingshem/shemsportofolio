@@ -69,11 +69,11 @@ export default function VisualizationSection() {
                   )}
                   <iframe
                     ref={iframeRef}
-                    // Use a relative path that includes the repository name
-                    src={`${process.env.PUBLIC_URL}/IncidentTraffic.html`}
+                    src="/shemsporotfolio/IncidentTraffic.html"
                     width="100%"
                     height="100%"
                     className="relative z-0"
+                    // Add a backup onLoad handler just to be safe
                     onLoad={() => setIsLoading(false)}
                   />
                 </div>
@@ -122,7 +122,7 @@ export default function VisualizationSection() {
                   color="bg-emerald-500"
                   description="Leveraging Folium, Plotly, and custom visualization libraries for interactive maps."
                 />
-
+                
                 {/* Technology 1: Looker & BigQuery */}
                 <SkillBar 
                   name="Looker & BigQuery" 
