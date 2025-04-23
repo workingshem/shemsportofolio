@@ -188,7 +188,7 @@ export default function ChatBubble() {
                     required
                   />
                 </div>
-                <Button type="submit" className="w-full" disabled>Start Chat</Button>
+                <Button type="submit" className="w-full">Start Chat</Button>
               </form>
             ) : (
               // Chat messages
