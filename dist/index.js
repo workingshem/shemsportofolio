@@ -54,7 +54,7 @@ var vite_config_default = defineConfig({
       )
     ] : []
   ],
-  base: "/shemsportofolio/",
+  // base:"/shemsportofolio/",
   resolve: {
     alias: {
       "@": path2.resolve(__dirname, "client", "src"),
